@@ -5,13 +5,24 @@ void main() => runApp(MaterialApp(
     appBar: AppBar(
       title: const Text('My First Ninja App',),
       centerTitle: true,
+      backgroundColor: Colors.red[900],
     ),
-    body: const Center(
-        child: Text('Hello Lespa'),
+    body: Center(
+        child: Text(
+            'Hello Lespa',
+            style: TextStyle(
+              fontSize: 20.0,
+              fontWeight: FontWeight.bold,
+              letterSpacing: 2.0,
+              color: Colors.grey[600],
+              fontFamily: 'ScaryDance'
+          ),
+        ),
     ),
     floatingActionButton: FloatingActionButton(
-      child: const Text('click'),
       onPressed: () => {},
+      backgroundColor: Colors.red[900],
+      child: const Text('click'),
     ),
   ),
 ));
