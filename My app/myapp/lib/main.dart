@@ -15,16 +15,10 @@ class Home extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.red[900],
       ),
-      body: Center(
-        child: Text(
-          'Hello Lespa',
-          style: TextStyle(
-              fontSize: 20.0,
-              fontWeight: FontWeight.bold,
-              letterSpacing: 2.0,
-              color: Colors.grey[600],
-              fontFamily: 'ScaryDance'
-          ),
+      body: const Center(
+        child: Image(
+          image: AssetImage('assets/images/smart-tech.png'),
+          //image: NetworkImage('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg'),
         ),
       ),
       floatingActionButton: FloatingActionButton(
