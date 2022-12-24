@@ -4,16 +4,49 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8f41076-af0f-4670-8155-dc43a5c4f897" name="Changes" comment="" />
+    <list default="true" id="f8f41076-af0f-4670-8155-dc43a5c4f897" name="Changes" comment="Adding images:&#10;asset images&#10;network images (from the internet)">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/myapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/lib/main.dart" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="recentBranches">
+      <RecentBranches>
+        <option name="branchesForRepo">
+          <list>
+            <RecentBranchesForRepo>
+              <option name="branches">
+                <list>
+                  <RecentBranch>
+                    <option name="branchName" value="myapp" />
+                    <option name="lastUsedInstant" value="1671873095" />
+                  </RecentBranch>
+                  <RecentBranch>
+                    <option name="branchName" value="master" />
+                    <option name="lastUsedInstant" value="1671873094" />
+                  </RecentBranch>
+                </list>
+              </option>
+              <option name="repositoryRootUrl" value="file://$PROJECT_DIR$/.." />
+            </RecentBranchesForRepo>
+          </list>
+        </option>
+      </RecentBranches>
+    </option>
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2JM06nHB5Gefwx4G2pj0ftZmtZc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -22,9 +55,11 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="RunOnceActivity.cidr.known.project.marker" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="cidr.known.project.marker" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
     <property name="io.flutter.reload.alreadyRun" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
@@ -43,6 +78,83 @@
       <option name="presentableId" value="Default" />
       <updated>1671872489131</updated>
     </task>
+    <task id="LOCAL-00001" summary="git myapp with the netninja">
+      <created>1671873210824</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1671873210824</updated>
+    </task>
+    <task id="LOCAL-00002" summary="git myapp with the netninja">
+      <created>1671873436082</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1671873436082</updated>
+    </task>
+    <task id="LOCAL-00003" summary="git myapp with the netninja: return Material app directly without creating a class">
+      <created>1671874424414</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1671874424414</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Scaffold: learn about centerTitle property">
+      <created>1671874471698</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1671874471698</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Scaffold: learn about centerTitle property">
+      <created>1671874528673</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1671874528673</updated>
+    </task>
+    <task id="LOCAL-00006" summary="TextStyles and Colors:&#10;background color&#10;font color&#10;font size&#10;font weight&#10;font family&#10;letter spacing&#10;how to add font">
+      <created>1671876098785</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1671876098785</updated>
+    </task>
+    <task id="LOCAL-00007" summary="refactor: &#10;StatelessWidget vs StatefulWidget&#10;override statement">
+      <created>1671876769101</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1671876769102</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Adding images:&#10;asset images&#10;network images (from the internet)">
+      <created>1671878568236</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1671878568236</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="git myapp with the netninja" />
+    <MESSAGE value="git myapp with the netninja: return Material app directly without creating a class" />
+    <MESSAGE value="Scaffold: learn about centerTitle property" />
+    <MESSAGE value="TextStyles and Colors:&#10;background color&#10;font color&#10;font size&#10;font weight&#10;font family&#10;letter spacing&#10;how to add font" />
+    <MESSAGE value="refactor: &#10;StatelessWidget vs StatefulWidget&#10;override statement" />
+    <MESSAGE value="Adding images:&#10;asset images&#10;network images (from the internet)" />
+    <option name="LAST_COMMIT_MESSAGE" value="Adding images:&#10;asset images&#10;network images (from the internet)" />
   </component>
 </project>
