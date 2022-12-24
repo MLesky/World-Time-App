@@ -16,9 +16,10 @@ class Home extends StatelessWidget {
         backgroundColor: Colors.red[900],
       ),
       body: const Center(
-        child: Image(
-          image: AssetImage('assets/images/smart-tech.png'),
-          //image: NetworkImage('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg'),
+        child: Icon(
+          Icons.airport_shuttle,
+          color: Colors.lightBlue,
+          size: 50.0,
         ),
       ),
       floatingActionButton: FloatingActionButton(
