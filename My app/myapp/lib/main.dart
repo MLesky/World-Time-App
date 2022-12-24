@@ -24,7 +24,6 @@ class HomePageState extends State<HomePage> {
   int index = 0;
   String navigateText = 'next';
 
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -34,33 +33,65 @@ class HomePageState extends State<HomePage> {
         backgroundColor: Colors.red[900],
       ),
       body: Center(
-        child: Image(
-          image: AssetImage('assets/images/${images[index]}.png'),
-          //image: NetworkImage('https://img.freepik.com/free-vector/laptop-with-program-code-isometric-icon-software-development-programming-applications-dark-neon_39422-971.jpg?size=626&ext=jpg'),
+        child: Column(
+          children: <Widget>[
+            Image(
+              image: AssetImage('assets/images/${images[index]}.png'),
+              width: 250.0,
+              height: 200.0,
+            ),
+            const SizedBox(height: 20.0,),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+              children: [
+                buildTextButtonIcon(
+                    label: 'prev',
+                    icon: Icons.arrow_back,
+                    onpress: prevImage,
+                ),
+                buildTextButtonIcon(
+                    label: 'next',
+                    icon: Icons.arrow_forward,
+                    onpress: nextImage,
+                ),
+              ],
+            ),
+          ],
         ),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: navigateTo,
-        backgroundColor: Colors.red[900],
-        child: Text(navigateText),
       ),
     );
   }
 
-  void navigateTo() {
-    if (navigateText == 'next'){
-      setState(() => index++);
-    } else {
-      setState(() => index--);
-    }
+  Widget buildTextButtonIcon({required String label, required IconData icon, required void Function()? onpress}){
+    return TextButton.icon(
+        onPressed: onpress,
+        icon: Icon(
+          icon,
+          color: Colors.red[900],
+        ),
+        label: Text(
+            label,
+            style: TextStyle(
+              color: Colors.red[900],
+              fontFamily: 'ScaryDance',
+              fontWeight: FontWeight.bold,
+            ),
+        ),
+    );
+  }
 
-    if(index >= images.length - 1){
-      setState(() => {
-        navigateText = 'prev'
+  void nextImage() {
+    if(index < images.length - 1){
+      setState(() {
+        index++;
       });
-    } else if(index == 0){
-      setState(() => {
-        navigateText = 'next'
+    }
+  }
+
+  void prevImage() {
+    if(index > 0){
+      setState(() {
+        index--;
       });
     }
   }

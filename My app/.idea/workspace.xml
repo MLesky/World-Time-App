@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="NONE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f8f41076-af0f-4670-8155-dc43a5c4f897" name="Changes" comment="Adding images:&#10;asset images&#10;network images (from the internet)">
-      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+    <list default="true" id="f8f41076-af0f-4670-8155-dc43a5c4f897" name="Changes" comment="next and prev separate buttons">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/myapp/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/myapp/lib/main.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,12 +24,12 @@
               <option name="branches">
                 <list>
                   <RecentBranch>
-                    <option name="branchName" value="myapp" />
-                    <option name="lastUsedInstant" value="1671873095" />
+                    <option name="branchName" value="tryouts" />
+                    <option name="lastUsedInstant" value="1671880884" />
                   </RecentBranch>
                   <RecentBranch>
-                    <option name="branchName" value="master" />
-                    <option name="lastUsedInstant" value="1671873094" />
+                    <option name="branchName" value="myapp" />
+                    <option name="lastUsedInstant" value="1671873095" />
                   </RecentBranch>
                 </list>
               </option>
@@ -134,7 +132,56 @@
       <option name="project" value="LOCAL" />
       <updated>1671878568236</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Navigate through images">
+      <created>1671881225589</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1671881225589</updated>
+    </task>
+    <task id="LOCAL-00010" summary="add other images">
+      <created>1671882168215</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1671882168215</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add other images">
+      <created>1671882643808</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1671882643808</updated>
+    </task>
+    <task id="LOCAL-00012" summary="next and prev">
+      <created>1671882788317</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1671882788317</updated>
+    </task>
+    <task id="LOCAL-00013" summary="next and prev">
+      <created>1671883185127</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1671883185127</updated>
+    </task>
+    <task id="LOCAL-00014" summary="next and prev separate buttons">
+      <created>1671890072684</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1671890072684</updated>
+    </task>
+    <task id="LOCAL-00015" summary="next and prev separate buttons">
+      <created>1671890294998</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1671890294998</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -142,7 +189,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="HEAD" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -155,6 +214,10 @@
     <MESSAGE value="TextStyles and Colors:&#10;background color&#10;font color&#10;font size&#10;font weight&#10;font family&#10;letter spacing&#10;how to add font" />
     <MESSAGE value="refactor: &#10;StatelessWidget vs StatefulWidget&#10;override statement" />
     <MESSAGE value="Adding images:&#10;asset images&#10;network images (from the internet)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding images:&#10;asset images&#10;network images (from the internet)" />
+    <MESSAGE value="Navigate through images" />
+    <MESSAGE value="add other images" />
+    <MESSAGE value="next and prev" />
+    <MESSAGE value="next and prev separate buttons" />
+    <option name="LAST_COMMIT_MESSAGE" value="next and prev separate buttons" />
   </component>
 </project>
