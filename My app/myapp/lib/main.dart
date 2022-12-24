@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
 
-List<String> images = ['smart-tech', 'man', 'flat-design'];
-
 void main() => runApp(const MyApp());
 
 class MyApp extends StatelessWidget {
@@ -22,6 +20,7 @@ class HomePage extends StatefulWidget {
 }
 
 class HomePageState extends State<HomePage> {
+  List<String> images = ['smart-tech', 'man', 'flat-design', 'sci-fi', 'optic-fiber', 'tech-brain'];
   int index = 0;
   String navigateText = 'next';
 
@@ -49,10 +48,20 @@ class HomePageState extends State<HomePage> {
   }
 
   void navigateTo() {
-    if(index >= images.length-1){
-      setState(() => index = 0);
-    } else {
+    if (navigateText == 'next'){
       setState(() => index++);
+    } else {
+      setState(() => index--);
+    }
+
+    if(index >= images.length - 1){
+      setState(() => {
+        navigateText = 'prev'
+      });
+    } else if(index == 0){
+      setState(() => {
+        navigateText = 'next'
+      });
     }
   }
 }
