@@ -4,8 +4,16 @@ void main() => runApp(const MaterialApp(
   home: LespaCard(),
 ));
 
-class LespaCard extends StatelessWidget {
+class LespaCard extends StatefulWidget {
   const LespaCard({Key? key}) : super(key: key);
+
+  @override
+  State<LespaCard> createState() => _LespaCardState();
+}
+
+class _LespaCardState extends State<LespaCard> {
+
+  int lespaLevel = 0;
 
   @override
   Widget build(BuildContext context) {
@@ -16,6 +24,13 @@ class LespaCard extends StatelessWidget {
         centerTitle: true,
         backgroundColor: Colors.grey[850],
         elevation: 0.0,
+      ),
+      floatingActionButton: FloatingActionButton(
+        onPressed: () {
+          setState(() => lespaLevel++);
+        },
+        backgroundColor: Colors.grey[800],
+        child: const Icon(Icons.add),
       ),
       body: Padding(
         padding: const EdgeInsets.fromLTRB(30.0, 40.0, 30.0, 0.0),
@@ -60,7 +75,7 @@ class LespaCard extends StatelessWidget {
             ),
             const SizedBox(height: 10.0),
             Text(
-              '8',
+              '$lespaLevel',
               style: TextStyle(
                 color: Colors.amberAccent[200],
                 letterSpacing: 2.0,
@@ -93,3 +108,5 @@ class LespaCard extends StatelessWidget {
     );
   }
 }
+
+
