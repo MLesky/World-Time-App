@@ -4,9 +4,15 @@ void main() => runApp(const MaterialApp(
   home: Home(),
 ));
 
-class Home extends StatelessWidget {
+class Home extends StatefulWidget {
   const Home({Key? key}) : super(key: key);
 
+  @override
+  State<Home> createState() => _HomeState();
+}
+
+class _HomeState extends State<Home> {
+  int minutes = 0, seconds = 0, hours = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -26,7 +32,7 @@ class Home extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(30.0),
               color: Colors.cyan,
-              child: const Text('1'),
+              child: Text('$seconds'),
             ),
           ),
           Expanded(
@@ -34,7 +40,7 @@ class Home extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(30.0),
               color: Colors.pinkAccent,
-              child: const Text('2'),
+              child: Text('$minutes'),
             ),
           ),
           Expanded(
@@ -42,13 +48,27 @@ class Home extends StatelessWidget {
             child: Container(
               padding: const EdgeInsets.all(30.0),
               color: Colors.amber,
-              child: const Text('3'),
+              child: Text('$hours'),
             ),
           ),
         ],
       ),
       floatingActionButton: FloatingActionButton(
-        onPressed: () {},
+        onPressed: () {
+          setState(() => seconds++);
+          if(seconds == 10){
+            setState((){
+              seconds = 0;
+              minutes++;
+            });
+          }
+          if(minutes == 10){
+            setState((){
+              minutes = 0;
+              hours++;
+            });
+          }
+        },
         backgroundColor: Colors.red[900],
         child: const Text('click'),
       ),
