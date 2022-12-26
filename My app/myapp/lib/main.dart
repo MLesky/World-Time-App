@@ -30,7 +30,15 @@ class _HomeState extends State<Home> {
         backgroundColor: Colors.redAccent,
       ),
       body: Column(
-        children: quotes.map((quote) => QuoteCard(quote: quote)).toList(),
+        children: quotes.map((quote) => QuoteCard(
+            quote: quote,
+            delete: () {
+              setState(() {
+                quotes.remove(quote);
+              });
+              print("\"${quote.text}\" by ${quote.author} has been deleted");
+            }
+        )).toList(),
       ),
     );
   }
