@@ -9,7 +9,7 @@ class WorldTime {
   late String date;
   late String flag;
   late String url;
-  late bool isDaytime;
+  bool? isDayTime;
 
   WorldTime({required this.location, required this.flag, required this.url});
 
@@ -34,10 +34,12 @@ class WorldTime {
       // set the time property
       date = DateFormat.yMEd().format(now);
       time = DateFormat.jm().format(now);
+      isDayTime = (now.hour > 6 && now.hour < 20) ? true: false;
 
     } catch(e) {
       print('caught error: $e');
-      time = date = 'could not get time data';
+      time = '';
+      date = 'could not get time data';
     }
 
   }
