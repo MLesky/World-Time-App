@@ -1,12 +1,15 @@
 import 'package:http/http.dart';
 import 'dart:convert';
+import 'package:intl/intl.dart';
 
 class WorldTime {
 
   late String location;
   late String time;
+  late String date;
   late String flag;
   late String url;
+  late bool isDaytime;
 
   WorldTime({required this.location, required this.flag, required this.url});
 
@@ -29,10 +32,12 @@ class WorldTime {
       // print("now: $now");
 
       // set the time property
-      time = now.toString();
+      date = DateFormat.yMEd().format(now);
+      time = DateFormat.jm().format(now);
+
     } catch(e) {
       print('caught error: $e');
-      time = 'could not get time data';
+      time = date = 'could not get time data';
     }
 
   }
