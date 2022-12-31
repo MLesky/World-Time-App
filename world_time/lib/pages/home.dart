@@ -23,7 +23,7 @@ class _HomeState extends State<Home> {
     // set background
     try{
       bgImage = data['isDayTime'] ? 'day.jpg' : 'night.jpg';
-      bgColor = data['isDayTime'] ? Colors.blue[700]! : const Color.fromRGBO(20, 20, 50, 1.0);
+      bgColor = data['isDayTime'] ? Colors.blue[900]! : const Color.fromRGBO(20, 20, 50, 0.3);
     } catch (e) {
       print('error is $e');
       bgImage = 'null.jpg';
